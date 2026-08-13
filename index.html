@@ -192,8 +192,20 @@
 
         footer { background-color: var(--surface-color); padding: 40px 0; text-align: center; color: var(--text-secondary); font-size: 0.95rem; }
         
+        /* 모바일 메뉴 버튼 스타일 */
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; color: var(--text-primary); padding: 8px; }
+        .main-nav { display: block; }
+
         @media (max-width: 768px) {
-            .header-wrap { flex-direction: column; height: auto; padding: 16px 0; gap: 16px; }
+            .header-wrap { flex-direction: row; justify-content: space-between; height: 70px; padding: 0; gap: 0; }
+            .mobile-menu-btn { display: block; }
+            .main-nav { display: none; position: absolute; top: 70px; left: 0; width: 100%; background: var(--white); box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 1px solid var(--border-color); padding: 10px 0; }
+            .main-nav.active { display: block; }
+            .nav-links { flex-direction: column; gap: 0; }
+            .nav-links li { padding: 16px 24px; border-bottom: 1px solid #f1f3f4; }
+            .nav-links li:last-child { border-bottom: none; }
+            .nav-links a { display: block; font-size: 1.1rem; }
+            
             .hero h1 { font-size: 2.2rem; }
             .two-col { grid-template-columns: 1fr; gap: 32px; }
             .two-col.reverse { grid-template-areas: "img" "text"; }
@@ -205,14 +217,24 @@
 
     <header>
         <div class="container header-wrap">
-            <div class="logo">🍬 캔디약국 안내센터</div>
-            <nav>
+            <a href="/" class="logo" title="캔디약국 안내센터 홈">🍬 캔디약국 안내센터</a>
+            
+            <!-- 모바일 메뉴 활성화 버튼 -->
+            <button class="mobile-menu-btn" aria-label="메뉴 열기" onclick="toggleMenu()">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
                 <ul class="nav-links">
-                    <li><a href="#about">사이트 소개</a></li>
-                    <li><a href="#guide">이용 가이드</a></li>
-                    <li><a href="#faq">자주 묻는 질문</a></li>
+                    <li><a href="#about" onclick="toggleMenu()">사이트 소개</a></li>
+                    <li><a href="#guide" onclick="toggleMenu()">이용 가이드</a></li>
+                    <li><a href="#faq" onclick="toggleMenu()">자주 묻는 질문</a></li>
                     <li><a href="review.html">후기 정보</a></li>
-                    <li><a href="#order">공식 사이트 접속</a></li>
+                    <li><a href="#order" onclick="toggleMenu()">공식 사이트 접속</a></li>
                 </ul>
             </nav>
         </div>
@@ -226,7 +248,7 @@
                 
                 <div class="hero-img-container">
                     <!-- SEO를 고려한 의미 있는 Alt 텍스트 적용 이미지 -->
-                    <img src="https://placehold.co/1000x400/e8f0fe/1a73e8?text=Candy+Pharmacy+Official+Guide" alt="캔디약국 공식 안내 사이트 메인 배너 - 안전한 이용을 위한 가이드">
+                    <img src="/img/Gemini_Generated_Image_al44yfal44yfal44.webp" alt="캔디약국 공식 안내 사이트 메인 배너 - 안전한 이용을 위한 가이드">
                 </div>
                 
                 <div class="geo-summary-box">
@@ -244,12 +266,14 @@
             <div class="container two-col">
                 <div class="text-content">
                     <h2>캔디약국이란 어떤 곳인가요?</h2>
-                    <p><strong>캔디약국</strong>은 고객님들께 신뢰할 수 있는 정확한 정보와 안전한 서비스를 제공하기 위해 마련된 전문 안내 사이트입니다. 인터넷상에 무분별하게 흩어진 정보 속에서, 사용자가 언제나 안전하고 빠르게 필요한 서비스에 접근할 수 있도록 돕는 것이 우리의 최우선 목표입니다.</p>
+                    <!-- 타겟 SEO 키워드가 포함된 자연스러운 문맥 수정 -->
+                    <p><strong>캔디약국</strong>은 남성정력제(비아그라, 시알리스 등) 구매를 원하시거나 안전하게 판매하는곳을 찾는 분들께 신뢰할 수 있는 정확한 정보와 서비스를 제공하기 위해 마련된 전문 안내 사이트입니다. 인터넷상에 무분별하게 흩어진 정보 속에서, 사용자가 언제나 안전하고 빠르게 필요한 서비스에 접근할 수 있도록 돕는 것이 우리의 최우선 목표입니다.</p>
                     <p>최근 <strong>캔디약국 사이트</strong>를 사칭하거나 검증되지 않은 정보를 제공하는 곳이 늘어나면서, 올바른 공식 사이트를 찾고 이용하는 방법에 대해 묻는 분들이 많아졌습니다.</p>
                     <p>본 안내 페이지(caendiyak.top)는 이러한 불편함을 해소하기 위해 기획되었습니다. 사이트의 주요 특징과 이용 시 유의점, 그리고 가장 중요한 실제 주문이 가능한 공식 주소를 투명하게 공개하여 여러분의 안전한 이용을 보장합니다.</p>
                 </div>
                 <div class="img-content">
-                    <img src="https://placehold.co/600x500/f8f9fa/5f6368?text=About+Candy+Pharmacy" alt="캔디약국 사이트 소개 및 투명한 정보 제공 안내 이미지">
+                    <!-- 요청하신 사이트 소개 이미지 경로 수정 -->
+                    <img src="/img/Gemini_Generated_Image_vvmeqnvvmeqnvvme.webp" alt="캔디약국 사이트 소개 및 투명한 정보 제공 안내 이미지">
                 </div>
             </div>
         </section>
@@ -342,6 +366,16 @@
             <p style="margin-top: 16px;">&copy; 2026 캔디약국 안내센터. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- 모바일 메뉴 동작 스크립트 추가 -->
+    <script>
+        function toggleMenu() {
+            if (window.innerWidth <= 768) {
+                const nav = document.getElementById('mainNav');
+                nav.classList.toggle('active');
+            }
+        }
+    </script>
 
 </body>
 </html>
