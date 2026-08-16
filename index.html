@@ -313,7 +313,18 @@
         </section>
 
     </main>
-
+    <style>
+        .site-footer { text-align: left; padding: 60px 0 30px; background-color: var(--surface-color); border-top: 1px solid var(--border-color); }
+        .site-footer .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .site-footer h3 { font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .site-footer h4 { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; }
+        .site-footer .desc { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px; }
+        .site-footer .disclaimer { font-size: 0.85rem; color: #718096; line-height: 1.5; background: var(--white); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .site-footer .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 0.95rem; }
+        .site-footer .footer-links a { color: var(--text-secondary); font-weight: 500; transition: all 0.2s ease; display: inline-block; }
+        .site-footer .footer-links a:hover { color: var(--primary-color); transform: translateX(3px); }
+        .site-footer .copyright { border-top: 1px solid var(--border-color); padding-top: 24px; text-align: center; font-size: 0.9rem; color: var(--text-secondary); }
+    </style>
  <footer class="site-footer">
         <div class="container">
             <div class="footer-grid">
