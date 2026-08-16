@@ -262,18 +262,46 @@
 
     </main>
 
-    <footer>
+    <style>
+        .site-footer { text-align: left; padding: 60px 0 30px; background-color: var(--surface-color); border-top: 1px solid var(--border-color); }
+        .site-footer .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .site-footer h3 { font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .site-footer h4 { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; }
+        .site-footer .desc { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px; }
+        .site-footer .disclaimer { font-size: 0.85rem; color: #718096; line-height: 1.5; background: var(--white); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .site-footer .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 0.95rem; }
+        .site-footer .footer-links a { color: var(--text-secondary); font-weight: 500; transition: all 0.2s ease; display: inline-block; }
+        .site-footer .footer-links a:hover { color: var(--primary-color); transform: translateX(3px); }
+        .site-footer .copyright { border-top: 1px solid var(--border-color); padding-top: 24px; text-align: center; font-size: 0.9rem; color: var(--text-secondary); }
+    </style>
+    
+    <footer class="site-footer">
         <div class="container">
-            <p><strong>비아몰 통합 공식 안내 사이트 (caendiyak.top)</strong></p>
-            <p>본 페이지는 비아몰, 비아샵, 비아클럽, 비아센터 후기 및 이용 가이드를 투명하게 제공하는 안내 센터입니다. 실제 상품 조회 및 구매 결제는 공식 쇼핑몰을 이용해 주십시오.</p>
-            
-            <div style="margin: 24px 0; display: flex; justify-content: center; gap: 24px; flex-wrap: wrap;">
-                <a href="https://viamallyak.com" target="_blank" rel="noopener noreferrer" title="비아몰 외부링크" style="color: var(--text-secondary); text-decoration: underline; text-underline-offset: 4px;">비아몰 (viamallyak.com)</a>
-                <a href="https://viayakmarket.com" target="_blank" rel="noopener noreferrer" title="비아마켓 외부링크" style="color: var(--text-secondary); text-decoration: underline; text-underline-offset: 4px;">비아마켓 (viayakmarket.com)</a>
-                <a href="https://powermanyak.com" target="_blank" rel="noopener noreferrer" title="파워맨 외부링크" style="color: var(--text-secondary); text-decoration: underline; text-underline-offset: 4px;">파워맨 (powermanyak.com)</a>
+            <div class="footer-grid">
+                <!-- 정보 영역 -->
+                <div class="footer-info">
+                    <h3>💊 비아 통합 안내센터</h3>
+                    <p class="desc">비아몰, 비아샵, 비아클럽, 비아센터의 올바른 이용 가이드와 안전한 공식 접속 주소를 투명하게 제공합니다.</p>
+                    <p class="disclaimer">※ 본 사이트는 올바른 정보 제공을 목적으로 운영되며, 실제 상세 확인 및 결제는 안내된 안전 공식 쇼핑몰에서 진행해 주십시오.</p>
+                </div>
+                
+                <!-- 사이트맵 / 내부 링크 영역 -->
+                <div class="footer-nav">
+                    <h4>주요 안내 페이지 (Site Map)</h4>
+                    <ul class="footer-links">
+                        <li><a href="/" title="안내센터 통합 메인">▪ 통합 메인</a></li>
+                        <li><a href="/review" title="통합 후기 및 정보">▪ 후기 및 정보</a></li>
+                        <li><a href="/viamall" title="비아몰 전용 안내">▪ 비아몰 안내</a></li>
+                        <li><a href="/viashop" title="비아샵 전용 안내">▪ 비아샵 안내</a></li>
+                        <li><a href="/viaclub" title="비아클럽 전용 안내">▪ 비아클럽 안내</a></li>
+                        <li><a href="/viacenter" title="비아센터 전용 안내">▪ 비아센터 안내</a></li>
+                    </ul>
+                </div>
             </div>
-
-            <p style="margin-top: 16px;">&copy; 2026 비아 통합 안내센터. All rights reserved.</p>
+            
+            <div class="copyright">
+                <p>&copy; 2026 비아 통합 안내센터. All rights reserved.</p>
+            </div>
         </div>
     </footer>
 
