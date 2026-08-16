@@ -1,1 +1,461 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    
+    <title>비아 통합 안내센터 공식 블로그 | 최신 정보 타임라인</title>
+    <meta name="description" content="남성정력제 안전 구매를 위한 비아몰, 비아샵, 비아클럽, 비아센터의 최신 소식, 이벤트, 리얼 후기를 실시간 타임라인으로 확인하세요.">
+    
+    <link rel="canonical" href="https://caendiyak.top/blog">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="비아 통합 안내센터 타임라인 블로그">
+    <meta property="og:description" content="비아몰, 비아샵, 비아클럽의 최신 정보와 안전 구매 가이드를 트위터 피드 형식으로 빠르게 확인하세요.">
+    <meta property="og:url" content="https://caendiyak.top/blog">
+    <meta property="og:site_name" content="비아 통합 안내센터">
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Blog",
+          "@id": "https://caendiyak.top/blog#blog",
+          "url": "https://caendiyak.top/blog",
+          "name": "비아 공식 안내 블로그",
+          "description": "비아몰, 비아샵, 비아클럽 최신 정보 타임라인",
+          "publisher": {
+            "@id": "https://caendiyak.top/#organization"
+          }
+        }
+      ]
+    }
+    </script>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --primary-color: #0b5cff;
+            --primary-dark: #0046d1;
+            --surface-color: #f4f7f9;
+            --text-primary: #0f1419;
+            --text-secondary: #536471;
+            --border-color: #eff3f4;
+            --white: #ffffff;
+            --twitter-blue: #1d9bf0;
+            --twitter-hover: #f7f9f9;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Noto Sans KR', sans-serif; color: var(--text-primary); line-height: 1.5; background-color: var(--white); word-break: keep-all; }
+        a { text-decoration: none; color: inherit; }
+        ul, ol { list-style: none; }
+
+        header { background-color: rgba(255, 255, 255, 0.95); border-bottom: 1px solid var(--border-color); position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(12px); }
+        .container { max-width: 1080px; margin: 0 auto; padding: 0 24px; }
+        .header-wrap { display: flex; justify-content: space-between; align-items: center; height: 60px; }
+        .logo { font-size: 1.3rem; font-weight: 800; color: var(--primary-color); display: flex; align-items: center; gap: 8px; }
+        .nav-links { display: flex; gap: 24px; }
+        .nav-links a { font-weight: 600; color: var(--text-secondary); transition: color 0.2s ease; font-size: 0.95rem; }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary-color); }
+
+        /* 트위터 스타일 레이아웃 (가운데 정렬 피드) */
+        main { background-color: var(--white); min-height: 100vh; }
+        .feed-wrapper { max-width: 600px; margin: 0 auto; border-left: 1px solid var(--border-color); border-right: 1px solid var(--border-color); }
+        
+        .feed-header { padding: 16px; border-bottom: 1px solid var(--border-color); background-color: rgba(255, 255, 255, 0.9); position: sticky; top: 60px; z-index: 99; backdrop-filter: blur(12px); }
+        .feed-header h1 { font-size: 1.25rem; font-weight: 800; }
+
+        .tweet { padding: 16px; border-bottom: 1px solid var(--border-color); transition: background-color 0.2s; cursor: pointer; display: flex; gap: 12px; }
+        .tweet:hover { background-color: var(--twitter-hover); }
+        
+        .tweet-avatar { width: 48px; height: 48px; border-radius: 50%; background-color: #e1e8ed; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; flex-shrink: 0; }
+        .avatar-viacenter { background-color: #e3f2fd; }
+        .avatar-review { background-color: #fce8e6; }
+        .avatar-viashop { background-color: #fff3e0; }
+        .avatar-viamall { background-color: #e2f7f5; }
+        .avatar-viaclub { background-color: #f3e5f5; }
+
+        .tweet-content { flex: 1; min-width: 0; }
+        .tweet-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .tweet-name { font-weight: 700; font-size: 15px; color: var(--text-primary); }
+        .tweet-name:hover { text-decoration: underline; }
+        .verified-badge { color: var(--twitter-blue); width: 18px; height: 18px; fill: currentColor; }
+        .tweet-handle, .tweet-time { color: var(--text-secondary); font-size: 14px; }
+        
+        .tweet-text { font-size: 15px; margin-bottom: 12px; white-space: pre-wrap; }
+        .hashtag { color: var(--twitter-blue); }
+        .hashtag:hover { text-decoration: underline; }
+
+        /* 내부 링크 카드 UI */
+        .link-card { border: 1px solid var(--border-color); border-radius: var(--radius-md); overflow: hidden; margin-top: 12px; transition: background-color 0.2s; display: block; }
+        .link-card:hover { background-color: rgba(0,0,0,0.02); }
+        .link-card-img { height: 130px; background-color: #f7f9f9; display: flex; align-items: center; justify-content: center; font-size: 2.5rem; border-bottom: 1px solid var(--border-color); }
+        .link-card-content { padding: 12px; }
+        .link-card-title { font-size: 15px; font-weight: 400; color: var(--text-secondary); margin-bottom: 2px; }
+        .link-card-desc { font-size: 15px; color: var(--text-primary); text-overflow: ellipsis; white-space: nowrap; overflow: hidden; }
+
+        /* 트위터 하단 액션 버튼 */
+        .tweet-actions { display: flex; justify-content: space-between; max-width: 425px; margin-top: 12px; color: var(--text-secondary); }
+        .action-btn { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--text-secondary); transition: color 0.2s; }
+        .action-btn svg { width: 18px; height: 18px; fill: currentColor; }
+        .action-btn:hover { color: var(--twitter-blue); }
+        .action-btn.rt:hover { color: #00ba7c; }
+        .action-btn.like:hover { color: #f91880; }
+
+        /* 푸터 2단 그리드 스타일 */
+        .site-footer { text-align: left; padding: 60px 0 30px; background-color: var(--surface-color); border-top: 1px solid var(--border-color); }
+        .site-footer .footer-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .site-footer h3 { font-size: 1.3rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
+        .site-footer h4 { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 16px; }
+        .site-footer .desc { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 12px; }
+        .site-footer .disclaimer { font-size: 0.85rem; color: #718096; line-height: 1.5; background: var(--white); padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); box-shadow: 0 2px 4px rgba(0,0,0,0.02); }
+        .site-footer .footer-links { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; font-size: 0.95rem; }
+        .site-footer .footer-links a { color: var(--text-secondary); font-weight: 500; transition: all 0.2s ease; display: inline-block; }
+        .site-footer .footer-links a:hover { color: var(--primary-color); transform: translateX(3px); }
+        .site-footer .copyright { border-top: 1px solid var(--border-color); padding-top: 24px; text-align: center; font-size: 0.9rem; color: var(--text-secondary); }
+
+        .mobile-menu-btn { display: none; background: none; border: none; cursor: pointer; color: var(--text-primary); padding: 8px; }
+        .main-nav { display: block; }
+
+        @media (max-width: 768px) {
+            .header-wrap { flex-direction: row; justify-content: space-between; height: 60px; padding: 0; gap: 0; }
+            .mobile-menu-btn { display: block; }
+            .main-nav { display: none; position: absolute; top: 60px; left: 0; width: 100%; background: var(--white); box-shadow: 0 4px 12px rgba(0,0,0,0.1); border-top: 1px solid var(--border-color); padding: 10px 0; }
+            .main-nav.active { display: block; }
+            .nav-links { flex-direction: column; gap: 0; }
+            .nav-links li { padding: 16px 24px; border-bottom: 1px solid #f1f3f4; }
+            .nav-links li:last-child { border-bottom: none; }
+            .nav-links a { display: block; font-size: 1.1rem; }
+            
+            .feed-wrapper { border-left: none; border-right: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-wrap">
+            <a href="/" class="logo" title="메인 홈으로 이동">💊 비아 통합 안내</a>
+            
+            <button class="mobile-menu-btn" aria-label="메뉴 열기" onclick="toggleMenu()">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+
+            <nav class="main-nav" id="mainNav">
+                <ul class="nav-links">
+                    <li><a href="/" onclick="closeMenu()">홈</a></li>
+                    <li><a href="/review" onclick="closeMenu()">통합 후기</a></li>
+                    <li><a href="/blog" class="active" onclick="closeMenu()">블로그 피드</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="feed-wrapper">
+            <div class="feed-header">
+                <h1>최신 업데이트</h1>
+            </div>
+
+            <!-- 기사 1: 비아센터 (안전/사칭 주의) -->
+            <a href="/viacenter" class="tweet">
+                <div class="tweet-avatar avatar-viacenter">🛡️</div>
+                <div class="tweet-content">
+                    <div class="tweet-meta">
+                        <span class="tweet-name">비아센터 공식</span>
+                        <svg class="verified-badge" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.918-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.337 2.25c-.416-.165-.866-.25-1.336-.25-2.21 0-3.918 1.79-3.918 4 0 .495.084.965.238 1.4-1.273.65-2.148 2.02-2.148 3.6 0 1.46.74 2.746 1.867 3.45-.032.18-.046.365-.046.55 0 2.21 1.71 3.998 3.918 3.998.47 0 .92-.084 1.336-.25C9.182 21.585 10.49 22.5 12 22.5s2.816-.917 3.337-2.25c.416.165.866.25 1.336.25 2.21 0 3.918-1.79 3.918-4 0-.185-.015-.37-.046-.55 1.127-.704 1.867-1.99 1.867-3.45zm-11.83 4.148l-4.22-4.22 1.442-1.442 2.778 2.777 6.452-6.453 1.442 1.443-7.893 7.894z"></path></g></svg>
+                        <span class="tweet-handle">@viacenter_kr</span>
+                        <span class="tweet-time">· 2시간 전</span>
+                    </div>
+                    <div class="tweet-text">가짜 정력제, 아직도 속고 계신가요? 😡 불법 스팸 문자로 오는 링크는 99% 피싱(사기)입니다. 
+
+내 몸에 들어가는 건데 아무거나 먹을 순 없죠. 비아센터 통합 안내 허브에서 사칭 사이트 거르는 필수 확인법과 안전한 100% 정품 보장 공식 주소를 지금 바로 확인하세요! 🛡️
+
+<span class="hashtag">#비아센터</span> <span class="hashtag">#정품확인</span> <span class="hashtag">#남성정력제</span> <span class="hashtag">#안전구매</span></div>
+                    
+                    <div class="link-card">
+                        <div class="link-card-img">🔒</div>
+                        <div class="link-card-content">
+                            <div class="link-card-title">caendiyak.top</div>
+                            <div class="link-card-desc">비아센터(Viacenter) 전용 안전 가이드 및 우회 접속</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-actions">
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.11-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg> 12</div>
+                        <div class="action-btn rt"><svg viewBox="0 0 24 24"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg> 45</div>
+                        <div class="action-btn like"><svg viewBox="0 0 24 24"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg> 128</div>
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg> 1.2K</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 기사 2: 후기 (리얼 후기 강조) -->
+            <a href="/review" class="tweet">
+                <div class="tweet-avatar avatar-review">📝</div>
+                <div class="tweet-content">
+                    <div class="tweet-meta">
+                        <span class="tweet-name">비아 통합 리뷰봇</span>
+                        <span class="tweet-handle">@via_reviews</span>
+                        <span class="tweet-time">· 5시간 전</span>
+                    </div>
+                    <div class="tweet-text">"철저한 3중 비밀 포장 덕분에 사무실로 시켰는데도 동료들 모르게 안전하게 잘 받았습니다 ㅋㅋㅋ 배송 진짜 빠르네요!" 📦
+
+비아몰, 비아샵 실제 고객님들이 남겨주신 100% 리얼 후기! 부작용 걱정 없이 확실한 정품을 구매하고 싶으신가요? 결제 전 반드시 생생한 이용자 후기를 먼저 확인하세요. 후기가 퀄리티를 증명합니다. 🔥
+
+<span class="hashtag">#비아몰후기</span> <span class="hashtag">#비아샵리뷰</span> <span class="hashtag">#비밀배송</span> <span class="hashtag">#빠른배송</span></div>
+                    
+                    <div class="link-card">
+                        <div class="link-card-img">⭐⭐⭐⭐⭐</div>
+                        <div class="link-card-content">
+                            <div class="link-card-title">caendiyak.top</div>
+                            <div class="link-card-desc">비아 통합 사이트 (비아몰, 비아샵 등) 100% 리얼 후기 모음</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-actions">
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.11-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg> 8</div>
+                        <div class="action-btn rt"><svg viewBox="0 0 24 24"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg> 22</div>
+                        <div class="action-btn like"><svg viewBox="0 0 24 24"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg> 256</div>
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg> 2.1K</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 기사 3: 비아샵 (트렌디/가격 정찰제) -->
+            <a href="/viashop" class="tweet">
+                <div class="tweet-avatar avatar-viashop">🛒</div>
+                <div class="tweet-content">
+                    <div class="tweet-meta">
+                        <span class="tweet-name">비아샵 쇼핑알리미</span>
+                        <span class="tweet-handle">@viashop_kr</span>
+                        <span class="tweet-time">· 12시간 전</span>
+                    </div>
+                    <div class="tweet-text">거품 뺀 투명한 정찰제, 비아샵 오픈! 🎉
+
+기본형부터 섭취가 간편한 최신 트렌드 필름형, 츄어블 제품까지 한 곳에서. 이리저리 가격 비교하느라 시간 낭비하지 마세요. 비아샵은 모든 제품의 가격을 투명하게 공개하고 당일 칼배송을 약속합니다. 
+
+합리적인 소비자를 위한 단 하나의 선택! ⚡
+
+<span class="hashtag">#비아샵</span> <span class="hashtag">#정찰제</span> <span class="hashtag">#시알리스필름</span> <span class="hashtag">#투명한가격</span></div>
+                    
+                    <div class="link-card">
+                        <div class="link-card-img">🏷️</div>
+                        <div class="link-card-content">
+                            <div class="link-card-title">caendiyak.top</div>
+                            <div class="link-card-desc">비아샵(Viashop) 전용 가이드: 투명한 가격과 트렌디 상품</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-actions">
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.11-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg> 5</div>
+                        <div class="action-btn rt"><svg viewBox="0 0 24 24"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg> 18</div>
+                        <div class="action-btn like"><svg viewBox="0 0 24 24"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg> 92</div>
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg> 805</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 기사 4: 비아몰 (100% 정품 보상 강조) -->
+            <a href="/viamall" class="tweet">
+                <div class="tweet-avatar avatar-viamall">🍬</div>
+                <div class="tweet-content">
+                    <div class="tweet-meta">
+                        <span class="tweet-name">비아몰 (Viamall)</span>
+                        <svg class="verified-badge" viewBox="0 0 24 24" aria-hidden="true"><g><path d="M22.5 12.5c0-1.58-.875-2.95-2.148-3.6.154-.435.238-.905.238-1.4 0-2.21-1.71-3.998-3.918-3.998-.47 0-.92.084-1.336.25C14.818 2.415 13.51 1.5 12 1.5s-2.816.917-3.337 2.25c-.416-.165-.866-.25-1.336-.25-2.21 0-3.918 1.79-3.918 4 0 .495.084.965.238 1.4-1.273.65-2.148 2.02-2.148 3.6 0 1.46.74 2.746 1.867 3.45-.032.18-.046.365-.046.55 0 2.21 1.71 3.998 3.918 3.998.47 0 .92-.084 1.336-.25C9.182 21.585 10.49 22.5 12 22.5s2.816-.917 3.337-2.25c.416.165.866.25 1.336.25 2.21 0 3.918-1.79 3.918-4 0-.185-.015-.37-.046-.55 1.127-.704 1.867-1.99 1.867-3.45zm-11.83 4.148l-4.22-4.22 1.442-1.442 2.778 2.777 6.452-6.453 1.442 1.443-7.893 7.894z"></path></g></svg>
+                        <span class="tweet-handle">@viamall_official</span>
+                        <span class="tweet-time">· 1일 전</span>
+                    </div>
+                    <div class="tweet-text">비아그라, 시알리스 100% 정품 보상제 실시! 💯
+
+비아몰에서는 약속합니다. 만에 하나 수령하신 제품이 가품일 경우 즉각적인 200% 책임 보상제를 운영 중입니다. 건강과 직결된 문제, 절대 싼값에 타협하지 마세요. 
+
+10년 무사고 비아몰의 안전한 공식 접속 주소를 안내 가이드에서 확인하세요.
+
+<span class="hashtag">#비아몰</span> <span class="hashtag">#비아그라정품</span> <span class="hashtag">#100프로보장</span> <span class="hashtag">#안전제일</span></div>
+                    
+                    <div class="link-card">
+                        <div class="link-card-img">💊</div>
+                        <div class="link-card-content">
+                            <div class="link-card-title">caendiyak.top</div>
+                            <div class="link-card-desc">비아몰(Viamall) 공식 안내: 100% 정품 보상 및 안심 배송</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-actions">
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.11-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg> 21</div>
+                        <div class="action-btn rt"><svg viewBox="0 0 24 24"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg> 56</div>
+                        <div class="action-btn like"><svg viewBox="0 0 24 24"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg> 340</div>
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg> 3.5K</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 기사 5: 비아클럽 (프리미엄 멤버십) -->
+            <a href="/viaclub" class="tweet">
+                <div class="tweet-avatar avatar-viaclub">💎</div>
+                <div class="tweet-content">
+                    <div class="tweet-meta">
+                        <span class="tweet-name">비아클럽 VIP</span>
+                        <span class="tweet-handle">@viaclub_vip</span>
+                        <span class="tweet-time">· 2일 전</span>
+                    </div>
+                    <div class="tweet-text">단골 고객을 위한 VIP 혜택의 끝판왕, 비아클럽 멤버십 오픈 💎
+
+한 번 구매하고 끝이 아닙니다! 재구매 시 쏟아지는 파격적인 포인트 적립과 기존 고객들만을 위한 프라이빗 시크릿 할인 이벤트까지 🎉 
+
+남성정력제를 꾸준히 안전하게 이용하시려면 비아클럽 멤버십이 정답입니다. 자세한 혜택 안내를 확인하세요!
+
+<span class="hashtag">#비아클럽</span> <span class="hashtag">#VIP멤버십</span> <span class="hashtag">#포인트적립</span> <span class="hashtag">#재구매혜택</span></div>
+                    
+                    <div class="link-card">
+                        <div class="link-card-img">👑</div>
+                        <div class="link-card-content">
+                            <div class="link-card-title">caendiyak.top</div>
+                            <div class="link-card-desc">비아클럽(Viaclub) 공식 안내: 프리미엄 멤버십과 특별 혜택</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-actions">
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.11-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg> 4</div>
+                        <div class="action-btn rt"><svg viewBox="0 0 24 24"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg> 11</div>
+                        <div class="action-btn like"><svg viewBox="0 0 24 24"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg> 189</div>
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg> 920</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 기사 6: 정품 구별법 (신규 추가) -->
+            <a href="/blog/genuine-guide" class="tweet">
+                <div class="tweet-avatar" style="background-color: #fff8e1;">🔍</div>
+                <div class="tweet-content">
+                    <div class="tweet-meta">
+                        <span class="tweet-name">비아 통합 안내봇</span>
+                        <span class="tweet-handle">@via_info</span>
+                        <span class="tweet-time">· 3일 전</span>
+                    </div>
+                    <div class="tweet-text">남성정력제 가짜 피싱 사이트 판별하는 3가지 꿀팁! 💡
+
+1️⃣ 말도 안 되는 초저가 덤핑 (80% 할인 등)
+2️⃣ 문자 메시지로 온 출처 불명 링크
+3️⃣ 허술한 사이트 디자인과 리뷰 부재
+
+내 몸을 위한 선택, 꼭 공식 안내센터를 통해 정품 사이트로 접속하세요. 아래 가이드를 읽어보시면 절대 속지 않습니다! 🛡️
+
+<span class="hashtag">#정품구별법</span> <span class="hashtag">#사기주의</span> <span class="hashtag">#안전구매</span></div>
+                    
+                    <div class="link-card">
+                        <div class="link-card-img">🕵️‍♂️</div>
+                        <div class="link-card-content">
+                            <div class="link-card-title">caendiyak.top/blog</div>
+                            <div class="link-card-desc">[필독] 1분 만에 가짜 사칭 사이트 걸러내는 완벽 가이드</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-actions">
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.11-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg> 15</div>
+                        <div class="action-btn rt"><svg viewBox="0 0 24 24"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg> 38</div>
+                        <div class="action-btn like"><svg viewBox="0 0 24 24"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg> 412</div>
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg> 1.8K</div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- 기사 7: 비밀 배송 안내 (신규 추가) -->
+            <a href="/blog/safe-delivery" class="tweet">
+                <div class="tweet-avatar" style="background-color: #e8f5e9;">📦</div>
+                <div class="tweet-content">
+                    <div class="tweet-meta">
+                        <span class="tweet-name">안심 배송 알리미</span>
+                        <span class="tweet-handle">@via_delivery</span>
+                        <span class="tweet-time">· 4일 전</span>
+                    </div>
+                    <div class="tweet-text">"가족들이 볼까 봐 집으로 시키기 무서워요..." 😨
+
+걱정하지 마세요! 비아 통합 제휴 사이트(비아몰, 비아샵 등)는 전 제품 '3중 안심 블라인드 포장'을 기본으로 합니다. 
+
+송장에는 '사무용품'이나 '화장품'으로 표기되어 택배 기사님조차 내용물을 알 수 없습니다. 완벽한 프라이버시 보호, 어떻게 진행되는지 확인해 보세요! 🤫
+
+<span class="hashtag">#비밀배송</span> <span class="hashtag">#안심포장</span> <span class="hashtag">#사생활보호</span></div>
+                    
+                    <div class="link-card">
+                        <div class="link-card-img">🎁</div>
+                        <div class="link-card-content">
+                            <div class="link-card-title">caendiyak.top/blog</div>
+                            <div class="link-card-desc">누구도 모르게! 3중 안심 비밀 배송 시스템의 모든 것</div>
+                        </div>
+                    </div>
+
+                    <div class="tweet-actions">
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M1.751 10c0-4.42 3.584-8 8.005-8h4.366c4.49 0 8.129 3.64 8.129 8.13 0 2.96-1.607 5.68-4.196 7.11l-8.054 4.46v-3.69h-.067c-4.49.11-8.183-3.51-8.183-8.01zm8.005-6c-3.317 0-6.005 2.69-6.005 6 0 3.37 2.77 6.08 6.138 6.01l.351-.01h1.761v2.3l5.087-2.81c1.951-1.08 3.163-3.13 3.163-5.36 0-3.39-2.744-6.13-6.129-6.13H9.756z"></path></g></svg> 9</div>
+                        <div class="action-btn rt"><svg viewBox="0 0 24 24"><g><path d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"></path></g></svg> 14</div>
+                        <div class="action-btn like"><svg viewBox="0 0 24 24"><g><path d="M16.697 5.5c-1.222-.06-2.679.51-3.89 2.16l-.805 1.09-.806-1.09C9.984 6.01 8.526 5.44 7.304 5.5c-1.243.07-2.349.78-2.91 1.91-.552 1.12-.633 2.78.479 4.82 1.074 1.97 3.257 4.27 7.129 6.61 3.87-2.34 6.052-4.64 7.126-6.61 1.111-2.04 1.03-3.7.477-4.82-.561-1.13-1.666-1.84-2.908-1.91zm4.187 7.69c-1.351 2.48-4.001 5.12-8.379 7.67l-.503.3-.504-.3c-4.379-2.55-7.029-5.19-8.382-7.67-1.36-2.5-1.41-4.86-.514-6.67.887-1.79 2.647-2.91 4.601-3.01 1.651-.09 3.368.56 4.798 2.01 1.429-1.45 3.146-2.1 4.796-2.01 1.954.1 3.714 1.22 4.601 3.01.896 1.81.846 4.17-.514 6.67z"></path></g></svg> 289</div>
+                        <div class="action-btn"><svg viewBox="0 0 24 24"><g><path d="M8.75 21V3h2v18h-2zM18 21V8.5h2V21h-2zM4 21l.004-10h2L6 21H4zm9.248 0v-7h2v7h-2z"></path></g></svg> 1.1K</div>
+                    </div>
+                </div>
+            </a>
+            
+            <div style="text-align: center; padding: 40px 16px; color: var(--text-secondary); font-size: 0.95rem;">
+                최근 소식을 모두 확인하셨습니다.
+            </div>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info">
+                    <h3>💊 비아 통합 안내센터</h3>
+                    <p class="desc">비아몰, 비아샵, 비아클럽, 비아센터의 올바른 이용 가이드와 안전한 공식 접속 주소를 투명하게 제공합니다.</p>
+                    <p class="disclaimer">※ 본 사이트는 올바른 정보 제공을 목적으로 운영되며, 실제 상세 확인 및 결제는 안내된 안전 공식 쇼핑몰에서 진행해 주십시오.</p>
+                </div>
+                
+                <div class="footer-nav">
+                    <h4>주요 안내 페이지 (Site Map)</h4>
+                    <ul class="footer-links">
+                        <li><a href="/" title="안내센터 통합 메인">▪ 통합 메인</a></li>
+                        <li><a href="/review" title="통합 후기 및 정보">▪ 후기 및 정보</a></li>
+                        <li><a href="/viamall" title="비아몰 전용 안내">▪ 비아몰 안내</a></li>
+                        <li><a href="/viashop" title="비아샵 전용 안내">▪ 비아샵 안내</a></li>
+                        <li><a href="/viaclub" title="비아클럽 전용 안내">▪ 비아클럽 안내</a></li>
+                        <li><a href="/viacenter" title="비아센터 전용 안내">▪ 비아센터 안내</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2026 비아 통합 안내센터. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('mainNav');
+            nav.classList.toggle('active');
+        }
+        
+        function closeMenu() {
+            if (window.innerWidth <= 768) {
+                const nav = document.getElementById('mainNav');
+                nav.classList.remove('active');
+            }
+        }
+    </script>
+
+</body>
+</html>
